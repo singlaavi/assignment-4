@@ -1,0 +1,50 @@
+#1-Reverse the list
+Li=[1,2,3,4,5]
+Li.reverse() 
+print("Reverse List:",Li)
+
+#2-Extract all the uppercase letters from a string
+String="WELcome"
+upper=""
+for letter in String:
+    if letter.isupper():
+        upper=upper+letter+','
+print("Uppercase letters:",upper)
+
+#3-Split and Store the Values After TypeCasting
+value=input("Enter input:")
+a=value.split(',')
+b=[]
+for i in a:
+    b.append(int(i))
+print(b)
+
+#4- Check for palindromic
+String="aviiva"
+rev=String[::-1]
+if String==rev:
+    print('String is a palindrome')
+else:
+    print('String is not a palindrome')
+
+#5-Understand Deep and Shallow Copy
+import copy as c
+l1=[1,2,3,[4,5],6]
+l2=c.deepcopy(l1)
+l1[3][1]='Hey'
+l1[2]='Hi'
+print(l1)
+print(l2)
+
+
+
+
+
+
+
+
+
+
+
+
+
